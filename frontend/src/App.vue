@@ -167,40 +167,7 @@ export default {    // public class App{
           headers: {'Content-Type': 'application/json'}, 
           data: pet
         });
-    },
-
-    feedPet(pet){
-        axios.request({ 
-          method: 'PUT', 
-          url: new URL(pet._links.feed.href).pathname, 
-          headers: {'Content-Type': 'application/json'},         
-        });
-
-    },
-
-    sleepPet(pet){
-        axios.request({ 
-          method: 'PUT', 
-          url: new URL(pet._links.sleep.href).pathname, 
-          headers: {'Content-Type': 'application/json'},         
-        });
-
-    },
-
-    groomPet(pet){
-        axios.request({ 
-          method: 'PUT', 
-          url: new URL(pet._links.groom.href).pathname, 
-          headers: {'Content-Type': 'application/json'},         
-        });
-
-    },
-
-
-
-
-
-
+    }
 
   }
 };
